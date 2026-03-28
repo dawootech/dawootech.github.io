@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>(주)다우테크 - 건축자재 전문 도매 및 소매</title>
+  <meta name="description" content="(주)다우테크는 경기도 고양시 일산 소재 건축자재 전문 도매·소매 기업입니다. PVC 배관, 소방자재, 그루브조인트, 밸브류 등 국내 주요 제조사 제품을 공급합니다. TEL (031) 906-3738" />
+  <meta name="keywords" content="건축자재,PVC배관,소방자재,그루브조인트,밸브,C-PVC,스프링클러,일산,고양시,도매" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dawootech.github.io/" />
+  <meta property="og:title" content="(주)다우테크 - 건축자재 전문 도매 및 소매" />
+  <meta property="og:description" content="PVC 배관, 소방자재, 그루브조인트 등 건축자재 전문 공급. 경기도 고양시 일산. TEL (031) 906-3738" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dawootech.github.io/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='8' fill='%231a3a5c'/><text x='18' y='25' text-anchor='middle' font-family='Arial' font-weight='900' font-size='16' fill='white'>DT</text></svg>" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -437,26 +446,10 @@
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow-sm);
-      min-height: 280px;
+      min-height: 300px;
       display: flex;
       flex-direction: column;
     }
-
-    .map-placeholder {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 24px;
-      background: linear-gradient(135deg, var(--accent-light) 0%, var(--gray-100) 100%);
-      text-align: center;
-      gap: 12px;
-    }
-
-    .map-placeholder svg { width: 40px; height: 40px; stroke: var(--accent); fill: none; opacity: 0.7; }
-    .map-placeholder p { font-size: 13px; color: var(--gray-600); line-height: 1.6; }
-    .map-placeholder strong { color: var(--navy); font-size: 14px; }
 
     /* ─── FOOTER ──────────────────────────────── */
     footer {
@@ -577,7 +570,7 @@
     <div class="hero-inner">
       <div class="hero-badge">건축자재 전문 도매 · 소매</div>
       <h1 class="hero-title">(주)다우테크</h1>
-      <p class="hero-sub">건축자재 전문 도매 및 소매</p>
+      <p class="hero-sub">15년 경력, 검증된 건축자재 공급업체</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#products">취급품목 보기</a>
         <a class="btn btn-outline" href="#contact">문의하기</a>
@@ -781,17 +774,31 @@
               <p class="contact-value">이민희</p>
             </div>
           </div>
+          <div class="contact-row">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">영업시간</p>
+              <p class="contact-value">월~금 09:00 ~ 18:00<br><small style="color:var(--gray-400)">토·일·공휴일 휴무</small></p>
+            </div>
+          </div>
         </div>
 
         <div class="contact-map fade-in">
-          <div class="map-placeholder">
-            <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
-            </svg>
-            <strong>경기도 고양시 일산동구</strong>
-            <p>성석로92번길 6 (성석동)<br>구: 성석동 877-9번지</p>
-            <a class="btn btn-primary" href="https://map.naver.com/v5/search/경기도 고양시 일산동구 성석로92번길 6" target="_blank" rel="noopener" style="margin-top:8px; font-size:13px; padding:9px 18px;">
-              네이버 지도에서 보기
+          <iframe
+            src="https://maps.google.com/maps?q=경기도+고양시+일산동구+성석로92번길+6+성석동&output=embed&z=17&hl=ko"
+            width="100%" height="100%" style="min-height:300px; border:0; border-radius:var(--radius);"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="(주)다우테크 위치">
+          </iframe>
+          <div style="padding:12px 16px; background:var(--white); border-top:1px solid var(--gray-200); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+            <span style="font-size:13px; color:var(--gray-600);">경기도 고양시 일산동구 성석로92번길 6</span>
+            <a href="https://map.naver.com/v5/search/경기도 고양시 일산동구 성석로92번길 6" target="_blank" rel="noopener"
+               style="font-size:12px; font-weight:600; color:var(--accent); text-decoration:none;">
+              네이버 지도 ↗
             </a>
           </div>
         </div>
@@ -819,7 +826,7 @@
         <div><strong>FAX</strong> (031) 906-3730</div>
         <div><strong>E-Mail</strong> <a href="mailto:dawoo3738@hanmail.net">dawoo3738@hanmail.net</a></div>
       </div>
-      <p class="footer-copy">&copy; 2025 (주)다우테크. All rights reserved.</p>
+      <p class="footer-copy">&copy; 2026 (주)다우테크. All rights reserved.</p>
     </div>
   </footer>
 
